@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="images/x-icon" href="CosmeticJhiss.jpeg">
+  <title>CosmeticJhiss</title>
+
+  <header></header>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('CosmeticJhiss.jpeg'); /* Pon aquí la ruta de tu fondo */
+      background-size: cover;
+      background-position: center;
+    
+      height: 100vh;
+      position: relative;
+    }
+
+    
+    header{
+      text-align: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: xx-large;
+      font-weight: bolder;
+      color: aliceblue;
+     
+
+    }
+
+    /* Añadimos un filtro para difuminar el fondo */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: -1;
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .foto {
+      position: relative;
+      margin: 10px;
+      width: 300px;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .foto img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Opcional: Añadir un efecto hover */
+    .foto:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+
+
+.perfil {
+  text-align: center;
+  background-image: url(CosmeticJhiss.jpeg);
+  background-repeat: repeat-x;
+background-position: center;
+  padding: 45px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.perfil img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #d6dad6;
+  margin-bottom: 10px;
+}
+
+.perfil h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #d6d6d6;
+}
+
+.texto {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.foto:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Color oscuro semitransparente */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+    
+  </style>
+</head>
+<body>
+
+
+
+ <div class="perfil">
+    <img src="CosmeticJhiss.jpeg" alt="Foto de perfil">
+    <h2>Cosmeticjhiss</h2>
+  </div>
+
+
+
+
+
+  <div class="galeria">
+    <div class="foto">
+      <a target="_blank" href="productos.html">
+      <img src="jhi.jpg" alt="Foto 1" /></a>
+    </div>
+    <div class="foto">
+      <a target="_blank" href="accesorios.html">
+      <img src="oj (4).jpeg" alt="Foto 1" /></a>
+    </div>
+    <div class="foto">
+      <a target="_blank" href="ojj (6).jpeg">
+      <img src="ojj (6).jpeg" alt="Foto 1" /></a>
+    </div>
+     <div class="foto">
+      <a target="_blank" href="access (1).jpeg">
+      <img src="access (1).jpeg" alt="Foto 1" /></a>
+    </div>
+    <div class="foto">
+      <a target="_blank" href="ace (1).jpeg">
+      <img src="ace (1).jpeg" alt="Foto 1" /></a>
+    </div>
+    <div class="foto">
+      <a target="_blank" href="ace (2).jpeg">
+      <img src="ace (2).jpeg" alt="Foto 1" /></a>
+    </div>
+     <div class="foto">
+      <a target="_blank" href="capi (10).jpeg">
+      <img src="capi (10).jpeg" alt="Foto 1" /></a>
+    </div>
+    <div class="foto">
+      <a target="_blank" href="rro (1).jpeg">
+      <img src="rro (1).jpeg" alt="Foto 1" /></a>
+    </div>
+    <div class="foto">
+      <a target="_blank" href="CosmeticJhiss.jpeg">
+      <img src="CosmeticJhiss.jpeg" alt="Foto 1" /></a>
+    </div>
+    <!-- Añade más fotos según necesites -->
+
+
+
+  <div class="foto">
+  <img src="CosmeticJhiss.jpeg" alt="Avatar" >
+  <div class="overlay">
+    <div class="text">Hello World</div>
+    </div>
+  </div>
+
+ 
+
+  </div>
+</body>
+</html>
+
