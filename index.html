@@ -12,7 +12,7 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-image: url('CosmeticJhiss.jpeg'); /* Pon aquí la ruta de tu fondo */
+      background-image: url('CosmeticJhiss.jpeg'); 
       background-size: cover;
       background-position: center;
     
@@ -31,7 +31,6 @@
 
     }
 
-    /* Añadimos un filtro para difuminar el fondo */
     body::before {
       content: "";
       position: absolute;
@@ -55,7 +54,7 @@
       position: relative;
       margin: 10px;
       width: 300px;
-      height: 200px;
+      height: 400px;
       overflow: hidden;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -70,7 +69,7 @@
       z-index: 1;
     }
 
-    /* Opcional: Añadir un efecto hover */
+ 
     .foto:hover {
       transform: scale(1.05);
       transition: transform 0.3s ease;
@@ -109,22 +108,29 @@ background-position: center;
   text-align: center;
 }
 
-.foto:hover .overlay {
-  opacity: 1;
-}
 
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Color oscuro semitransparente */
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  color: white;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: opacity 0.4s ease;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+
+.foto:hover .overlay {
+  opacity: 1;
 }
 
 
@@ -140,15 +146,15 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
 
-  /* Fondo con imagen repetida */
+
   background-image: url('CosmeticJhiss.jpeg');
-  background-repeat: repeat; /* Hace que la imagen se repita */
-  background-size: auto; /* Muestra la imagen en su tamaño original */
+  background-repeat: repeat; 
+  background-size: auto; 
   background-position: center;
 
-  /* Difuminado con filtro de fondo */
+
   backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px); /* Soporte para Safari */
+  -webkit-backdrop-filter: blur(8px); 
 
   color: white;
   padding: 20px 0;
@@ -158,12 +164,12 @@ body {
   z-index: 1;
 }
 
-/* Capa semitransparente encima del fondo para lograr un efecto de difuminado más visible */
+
 .footer::before {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: inherit; /* Hereda el fondo para aplicar el filtro */
+  background: inherit; 
   filter: blur(8px);
   z-index: -1;
 }
@@ -217,7 +223,7 @@ body {
     </div>
     <div class="foto">
       <a target="_blank" href="accesorios.html">
-      <img src="oj (4).jpeg" alt="Foto 2" /></a>
+      <img src="accesorios.jpg" alt="Foto 2" /></a>
     </div>
     <div class="foto">
       <a target="_blank" href="detalles.html">
@@ -247,7 +253,7 @@ body {
       <a target="_blank" href="CosmeticJhiss.jpeg">
       <img src="CosmeticJhiss.jpeg" alt="Foto 9" /></a>
     </div>
-    <!-- Añade más fotos según necesites -->
+
 
 
 
