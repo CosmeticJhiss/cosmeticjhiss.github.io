@@ -2,7 +2,7 @@
 <html>
 <head>
 <style>
-/* GALERÍA CON FLEXBOX RESPONSIVE */
+
 .galeria {
   display: flex;
   flex-wrap: wrap;
@@ -11,7 +11,7 @@
   padding: 20px;
 }
 
-/* ESTILOS DE CADA FOTO */
+
 .foto {
   position: relative;
   width: 300px;
@@ -38,7 +38,7 @@
   border-radius: 8px;
 }
 
-/* OVERLAY */
+
 .overlay {
   position: absolute;
   top: 0; left: 0;
@@ -58,18 +58,17 @@
   line-height: 1.3;
 }
 
-/* Aparece al pasar mouse en PC */
+
 .foto:hover .overlay {
   opacity: 1;
 }
 
-/* Siempre visible en móvil */
+
 @media (max-width: 768px) {
   .overlay {
     opacity: 1 !important;
   }
 
-  /* Ajustamos tamaño para pantallas pequeñas */
   .foto {
     width: 90vw;
     height: auto;
@@ -83,7 +82,7 @@
  body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-image: url('CosmeticJhiss.jpeg'); /* Pon aquí la ruta de tu fondo */
+      background-image: url('CosmeticJhiss.jpeg'); 
       background-size: cover;
       background-position: center;
     
@@ -101,7 +100,7 @@
 
     }
 
-    /* Añadimos un filtro para difuminar el fondo */
+
     body::before {
       content: "";
       position: absolute;
@@ -124,7 +123,7 @@
       position: relative;
       margin: 10px;
       width: 300px;
-      height: 200px;
+      height: 400px;
       overflow: hidden;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -183,27 +182,117 @@ background-position: center;
 </head>
 <body>
 
-<!-- GALERÍA -->
+
 <div class="galeria">
   <div class="foto">
-      <img src="jhi.jpg" alt="Foto 1" />
-      <div class="overlay"><div class="texto">Añadir descripcion</div></div>
+      <img src="sombra.jpeg" alt="Foto 1" />
+      <div class="overlay"><div class="texto">PALETA SAGUI 9 COLORES ($15.000)</div></div>
     </a>
   </div>
   
   <div class="foto">
-      <img src="oj (4).jpeg" alt="Foto 2" />
-      <div class="overlay"><div class="texto">Añadir descripcion</div></div>
+      <img src="sombra1.jpeg" alt="Foto 2" />
+      <div class="overlay"><div class="texto">PALETA DE SOMBRA X4 TONOS SAGUI ($13.000) </div></div>
     </a>
   </div>
 
   <div class="foto">
-      <img src="CosmeticJhiss.jpeg" alt="Foto 3" />
-      <div class="overlay"><div class="texto">Añadir descripcion</div></div>
+      <img src="sombra2.jpeg" alt="Foto 3" />
+      <div class="overlay"><div class="texto">PALETA DD SOMBRA X4 TONOS SAGUI ($13.000) </div></div>
     </a>
   </div>
-  
-  <!-- Añade más fotos siguiendo el mismo patrón -->
+
+ <div class="foto">
+      <img src="sombra3.jpeg" alt="Foto 3" />
+      <div class="overlay"><div class="texto">PALETA DE SOMBRA X15 TONOS +ESPEJO SAGUI ($26.000)</div></div>
+    </a>
+  </div>
+
+ <div class="foto">
+      <img src="sombra4.jpeg" alt="Foto 3" />
+      <div class="overlay"><div class="texto">PALETA DE SOMBRA X25 TONOS ($22.000) </div></div>
+    </a>
+  </div>
+ <div class="foto">
+      <img src="sombra5.jpeg" alt="Foto 3" />
+      <div class="overlay"><div class="texto">PALETA DE SOMBRA NUDE ($22.000) </div></div>
+    </a>
+  </div>
+   <div class="foto">
+      <img src="sombra6.jpeg" alt="Foto 3" />
+      <div class="overlay"><div class="texto">PALETA DE SOMBRA X6 TONOS ($9.000) </div></div>
+    </a>
+  </div>
+ <div class="foto">
+      <img src="sombra7.jpeg" alt="Foto 3" />
+      <div class="overlay"><div class="texto">PALETA DE CONTORNO ($25.000)</div></div>
+    </a>
+  </div>
+
+ <div class="foto">
+      <img src="sombra8.jpeg" alt="Foto 3" />
+      <div class="overlay"><div class="texto">PALETA DE SOMBRA X32 TONOS CARTERA CON RUBORES ,LABIAL ILUMINADORES ,GLITER ($30.000) </div></div>
+    </a>
+  </div>
+
+   <div class="foto">
+      <img src="sombra9.jpeg" alt="Foto 3" />
+      <div class="overlay"><div class="texto">PALETA DE SOMBRAS X16 TONOS ($24.000) </div></div>
+    </a>
+  </div>
+
+ <div class="foto">
+      <img src="sombra10.jpeg" alt="Foto 3" />
+      <div class="overlay"><div class="texto">PALETA DE SOMBRAS X63 TONOS ($60.000) </div></div>
+    </a>
+  </div>
+
+ <div class="foto">
+      <img src="sombra11.jpeg" alt="Foto 3" />
+      <div class="overlay"><div class="texto">PALETA DE SOMBRAS X16 TONOS ($22.000) </div></div>
+    </a>
+  </div>
+
+ <div class="foto">
+      <img src="sombra12.jpeg" alt="Foto 3" />
+      <div class="overlay"><div class="texto">PALETA DE SOMBRAS X16 TONOS ($22.000) </div></div>
+    </a>
+  </div>
+
+
+ <div class="foto">
+      <img src="sombra13.jpeg" alt="Foto 3" />
+      <div class="overlay"><div class="texto">PALETA DE SOBRAS 18 TONOS ($25.000) </div></div>
+    </a>
+  </div>
+
+
+ <div class="foto">
+      <img src="sombra14.jpeg" alt="Foto 3" />
+      <div class="overlay"><div class="texto">PALETA DE SOMBRA 24 TONOS ($35.000) </div></div>
+    </a>
+  </div>
+
+
+ <div class="foto">
+      <img src="sombra15.jpeg" alt="Foto 3" />
+      <div class="overlay"><div class="texto">PALETA DE SOMBRA 16 TONOS ($22.000) </div></div>
+    </a>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
 
 
