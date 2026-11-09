@@ -3796,10 +3796,7 @@
                         <p class="font-serif text-xl font-bold text-roseGold mt-1">${formatCOP(product.price)}</p>
                     </div>
                     <p class="text-sm text-softCharcoal/80 font-light leading-relaxed">${product.description ? `<p>${product.description}</p>` : ""}</p>
-                    <div class="bg-pastelMint/50 p-3.5 rounded-2xl border border-pastelLavender/50">
-                        <h4 class="text-xs font-bold text-softCharcoal uppercase tracking-wider mb-1"><i class="fa-solid fa-circle-info text-roseGold mr-1"></i> Detalles & Fórmula</h4>
-                        <p class="text-xs text-softCharcoal/70 font-light">${product.details ? `<div class="product-details"><strong>DETALLES & FÓRMULA</strong><p>${product.details}</p></div>` : ""}</p>
-                    </div>
+                    
                     <div class="flex items-center space-x-3 pt-2">
                         <button onclick="addToCart(${product.id}); closeProductModal();" class="flex-1 py-3.5 rounded-full bg-softCharcoal text-white text-sm font-medium hover:bg-roseGold transition-all shadow-md flex items-center justify-center space-x-2">
                             <i class="fa-solid fa-bag-shopping"></i>
